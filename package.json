@@ -1,10 +1,10 @@
 {
-  "name": "angular.io-example",
+  "name": "angular-store-example",
   "version": "0.0.0",
   "description": "Example project from an angular.io guide.",
   "license": "MIT",
   "scripts": {
-    "heroku-postbuild": "ng build --prod",
+    "heroku-postbuild": "npm install express --legacy-peer-deps && ng build --prod",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
