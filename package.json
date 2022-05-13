@@ -4,7 +4,6 @@
   "description": "Example project from an angular.io guide.",
   "license": "MIT",
   "scripts": {
-    "heroku-prebuild": "npm config set legacy-peer-deps true",
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "start": "node server.js",
