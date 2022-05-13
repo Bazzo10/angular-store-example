@@ -4,8 +4,8 @@
   "description": "Example project from an angular.io guide.",
   "license": "MIT",
   "scripts": {
-    "heroku-prebuild": "npm install express --save --legacy-peer-deps",
-    "heroku-postbuild": "ng build --prod",
+    "heroku-prebuild": "npm config set legacy-peer-deps true",
+    "heroku-postbuild": "npm config set legacy-peer-deps true && ng build --prod",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
